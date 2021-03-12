@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace UserPassWordForRule3
+namespace UserPassWordForRule4
 {
     class Regex
     {
@@ -12,7 +11,8 @@ namespace UserPassWordForRule3
         public const string REGEX_LASTNAME = "^[A-Z]{1}[A-Za-z]{2,}$";
         public const string REGEX_EMAIL = "^[0-9A-Za-z]+([._+-][0-9A-Za-z]+)*[@][0-9A-Za-z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";
         public const string REGEX_MOBILENUMBER = "^[1-9]{1}[0-9]{0,3}\\s[1-9]{1}[0-9]{9}$";
-        public const string REGEX_PASSWORD = "^(?=.*[A-Z])(?=.*\\d)[\\S]{8,}$";
+        //  \S matches any non-whitespace character
+        public const string REGEX_PASSWORD = "^(?=.*[A-Z])(?=.*\\d)(?=[\\w]*[\\W][\\w]*$)[\\S]{8,}$";
         public bool ValidateFirstName(string firstName)
         {
             return Regex.IsMatch(firstName, REGEX_FIRSTNAME);
@@ -34,4 +34,5 @@ namespace UserPassWordForRule3
             return Regex.IsMatch(password, REGEX_PASSWORD);
         }
     }
+}
 }

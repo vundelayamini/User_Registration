@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PreDefinedPassWord
+namespace UserUpperCase
 {
     class Program
     {
@@ -18,8 +18,9 @@ namespace PreDefinedPassWord
             string phoneNumber = "91 9014066209";
             Console.WriteLine("phoneNumber result is :" + result);
 
-            string password = "yaminimahi"; 
+            string password = "yaminimahi";
             Console.WriteLine("password result is :" + result);
         }
+    }
     }
 }

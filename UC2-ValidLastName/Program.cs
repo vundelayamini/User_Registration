@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Text.RegularExpressions;
 
-namespace UserRegistration
+namespace UC2_ValidLastName
 {
     class Program
     {
@@ -9,6 +8,10 @@ namespace UserRegistration
         {
             string firstName = "Yamini";
             Console.WriteLine("Firt name result :" + result);
+            string lastName = "Mahesh";
+            Console.WriteLine("Last name result :" + result);
         }
+
     }
 }
+

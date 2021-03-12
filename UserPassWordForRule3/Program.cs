@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UserUpperCase
+namespace UserPassWordForRule3
 {
     class Program
     {
@@ -21,6 +21,5 @@ namespace UserUpperCase
             string password = "yaminimahi";
             Console.WriteLine("password result is :" + result);
         }
-    }
     }
 }

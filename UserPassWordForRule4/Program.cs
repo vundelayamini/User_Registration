@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UserPassWordForRule3
+namespace UserPassWordForRule4
 {
     class Program
     {

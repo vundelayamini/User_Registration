@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TestPassWordForRule3
+namespace TestPassWordforRule4
 {
     [TestClass]
     public class UnitTest1
@@ -44,4 +44,5 @@ namespace TestPassWordForRule3
             Assert.AreEqual(true, result);
         }
     }
+}
 }

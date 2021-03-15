@@ -1,12 +1,13 @@
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TestPassWordforRule4
+namespace TestAllEmailSamples
 {
     [TestClass]
     public class UnitTest1
     {
         [TestMethod]
+
         public static void GivenUserFirstName_Whenvalidate_ThenReturnTrue()
         {
             Program program = new Program();
@@ -43,6 +44,21 @@ namespace TestPassWordforRule4
             bool result = program.validatePassWord("yaminiMahi");
             Assert.AreEqual(true, result);
         }
+        [TestMethod]
+        [DataSource("abc@ygmail.com")]
+        [DataRow("abc-100@yahoo.com")]
+        [DataRow("abc.100@abcd.com")]
+        [DataRow("abc111@amit.com")]
+        [DataRow("abc-100@gmail.net")]
+        [DataRow("abc.100@abc.com.au")]
+        [DataRow("abc@1.com")]
+        [DataRow("abc@gmail.com.co")]
+        [DataRow("abc+100@gmail.com")]
+        
+
+        public static void NewMethod(string email)
+        {
+            Assert.IsTrue(Program.ValidateEmail(email));
+        }
     }
-}
 }

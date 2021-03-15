@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TestMobileFormat
+namespace TestPassWord1
 {
     [TestClass]
     public class UnitTest1
@@ -33,6 +33,14 @@ namespace TestMobileFormat
         {
             Program program = new Program();
             bool result = Program.validatePhoneNumber("91 9014066209");
+            Assert.AreEqual(true, result);
+        }
+        [TestMethod]
+
+        public static void GivenUserPassWord_Whenvalidate_ThenReturnTrue()
+        {
+            Program program = new Program();
+            bool result = program.validatePassWord("yaminiMahi");
             Assert.AreEqual(true, result);
         }
     }

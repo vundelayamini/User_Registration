@@ -2,31 +2,32 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace ClearAllEmailSamples
+namespace UserCustomException
 {
     class Program
     {
-        private static string result;
 
         static void Main(string[] args)
         {
-            string frstName = "Yamini";
-            Console.WriteLine("First name result  is :" + result);
+            Regex regex = new Regex();
+            string FirstName = "Yamini";
+            Console.WriteLine(regex.ValidateFirstName(FirstName));
 
-            string LastName = "mahesh";
-            Console.WriteLine("Last name result is :" + result);
+            string LastName = "Mahesh";
+            Console.WriteLine(regex.ValidateLastName(LastName));
 
-            string emial = "vudelayamini@gmail.com";
-            Console.WriteLine("Email result is :" + result);
+            string Email = "vundelayamini@gmail.com";
+            Console.WriteLine(regex.ValidateEmail(Email));
 
-            string phoneNumber = "91 9014066209";
-            Console.WriteLine("phoneNumber result is :" + result);
-
-            string passWord = "Yamini@mahi";
-            Console.WriteLine("passWord result is :" + result);
             
+            string PhoneNumber = "91 9014066209";
+            Console.WriteLine(regex.ValidatePhone(PhoneNumber));
 
-        
+            string Password = "yaminiMahi";
+            Console.WriteLine(regex.ValidatePassword(Password));
+
+
+            //Validating Sample Emails
             List<string> sampleEmailList = new List<string>()
             {
                 "abc@yahoo.com",
@@ -39,18 +40,18 @@ namespace ClearAllEmailSamples
                 "abc@gmail.com.com",
                 "abc+100@gmail.com"
             };
-             foreach (string item in sampleEmailList)
-              {
+            foreach (string item in sampleEmailList)
+            {
 
                 if (Regex.validateEmail)
                 {
-                    Console.WriteLine("Valid Email");
+                    Console.WriteLine("valid Email");
                 }
                 else
                 {
                     Console.WriteLine("Invalid Email");
                 }
-             }
+            }
 
         }
     }

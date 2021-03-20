@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UserCustomException
+namespace UserRegistration
 {
-    class UserException : Exception
-    { 
+
+    class UserDetailsExeption : Exception
+    {
         public enum ExceptionType
         {
             INVALID_FIRSTNAME,
@@ -15,10 +16,8 @@ namespace UserCustomException
             INVALID_MOBILE
         }
         private ExceptionType type;
-        public UserException(ExceptionType type, string message) : base(message)
+        public UserDetailsExeption(ExceptionType type, string message) : base(message)
         {
             this.type = type;
         }
     }
-}
-

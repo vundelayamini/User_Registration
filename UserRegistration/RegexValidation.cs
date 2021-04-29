@@ -13,10 +13,7 @@ namespace UserRegistration
         public const string Regex_LastName = "^[A-Z]{1}[A-Za-z]{2,}$";//Create pattren for lastname
         public const string Regex_Email = "^[0-9A-Za-z]+([._+-][0-9A-Za-z]+)*[@][0-9A-Za-z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";////Create pattren for  Email
         public const string Regex_MobileNumber = "^[1-9]{1}[0-9]{0,3}\\s[1-9]{1}[0-9]{9}$";//Create pattren for Mobile number 
-        //\S matches any non-whitespace character
-          //public const string Regex_Password = "[\\S]{8,}";
-
-        public const string Regex_Password = "^(?=.*[a-z])(?=.*[A-Z])" + "(?=\\S+$).{8,20}$"; //At least One UpperCase
+        public const string REGEX_PASSWORD = "^(?=.*[A-Z])(?=.*\\d)[\\S]{8,}$";
         public bool ValidateFirstName(string FirstName)//consructor
         {
             return Regex.IsMatch(FirstName, Regex_FirstName);

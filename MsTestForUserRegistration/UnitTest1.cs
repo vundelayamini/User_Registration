@@ -68,6 +68,7 @@ namespace MsTestForUserRegistration
         public void Given_Password_WhenValidate_ShouldReturn_True()
         {
             //Arrange
+            //All paswoord test case 5/6 done in single method
             string Password = "yaminimahi@12";
             //Act
             bool result = person.ValidatePassword(Password);

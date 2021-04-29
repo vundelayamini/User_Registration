@@ -5,20 +5,12 @@ namespace MsTestForUserRegistration
     [TestClass]
     public class UnitTest1
     {
-<<<<<<< HEAD
         private object person;
-
-=======
->>>>>>> UC9-ClearAllEmailsSamples
         [TestMethod]
         public void TestMethod1()
         {
               private object person;
-
-<<<<<<< HEAD
-
-=======
->>>>>>> UC9-ClearAllEmailsSamples
+            
         [TestInitialize]
         public void InitClassObject()
         {
@@ -102,8 +94,5 @@ namespace MsTestForUserRegistration
             Assert.IsTrue(person.ValidateEmail(email));
         }
     }
-<<<<<<< HEAD
-=======
-    
->>>>>>> UC9-ClearAllEmailsSamples
+
 }

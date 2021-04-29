@@ -33,7 +33,7 @@ namespace UserRegistration
                 "abct111@amit.com",
                 "abc-100@gmail.net",
                 "abcd.100@abc.com.au",
-                "abcdt@1.com",
+                "aacdt@1.com",
                 "abcdc@gmail.com.com",
                 "abcd+100@gmail.com"
             };

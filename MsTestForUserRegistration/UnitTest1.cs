@@ -8,29 +8,44 @@ namespace MsTestForUserRegistration
         private object person;
 
         [TestInitialize]
-            public void InitClassObject()
-            {
-                //Arrange
-                person = new RegexValidation();
-            }
-            /// <summary>
-            /// UC1-Validate for the firstname
-            /// </summary>
-            [TestMethod]
-            public void GivenUserFistName_WhenValidate_ShouldReturnTrue()
-            {
-                string FirstName = "Yamini";
-                //Act
-                bool result = person.ValidateFirstName(FirstName);
-                //Assert
-                Assert.IsTrue(result);
-            }
+        public void InitClassObject()
+        {
+            //Arrange
+            person = new RegexValidation();
+        }
+        /// <summary>
+        /// UC1-Validate for the firstname
+        /// </summary>
+        [TestMethod]
+        public void GivenUserFistName_WhenValidate_ShouldReturnTrue()
+        {
+            string FirstName = "Yamini";
+            //Act
+            bool result = person.ValidateFirstName(FirstName);
+            //Assert
+            Assert.IsTrue(result);
+        }
+        /// <summary>  
+        /// UC2-Valid for LastName
+        /// </summary>
         [TestMethod]
         public void GivenUser_LastName_WhenValidate_ShouldReturn_True()
         {
             string LastName = "Mahi";
             //Act
             bool result = person.ValidateLastName(LastName);
+            //Assert
+            Assert.IsTrue(result);
+        }
+        /// <summary>
+        /// UC3-Valid for Email
+        /// </summary>
+        [TestMethod]
+        public void Given_EmailId_WhenValidate_ShouldReturn_True()
+        {
+            string Email = "yamini1235@gmail.com";
+            //Act
+            bool result = person.ValidateEmail(Email);
             //Assert
             Assert.IsTrue(result);
         }

@@ -25,33 +25,17 @@ namespace UserRegistration
             Console.WriteLine("Enter Your Password");//take input from the user
             string Password = Console.ReadLine();//store the input for password
             Console.WriteLine(regexValidation.ValidatePassword(Password));
-
-<<<<<<< HEAD
             List<string> sampleEmailList = new List<string>()
             {
-                "ami@ygmail.com",
-                "ami-100@yahoo.com",
-                "ami.100@abcd.com",
-                "amit111@amit.com",
-                "ami-100@gmail.net",
-                "amit.100@abc.com.au",
-                "aamit@1.com",
-                "amitc@gmail.com.com",
-                "amit+100@gmail.com"
-=======
-            //Validating Sample Emails
-            List<string> sampleEmailList = new List<string>()
-            {
-                "abc@yahoo.com",
+                "abc@ygmail.com",
                 "abc-100@yahoo.com",
-                "abc.100@yahoo.com",
-                "abc111@abc.com",
-                "abc-100@abc.net",
-                "abc.100@abc.com.au",
-                "abc@1.com",
-                "abc@gmail.com.com",
-                "abc+100@gmail.com"
->>>>>>> UC9-ClearAllEmailsSamples
+                "abc.100@abcd.com",
+                "abc111@amit.com",
+                "abc-100@gmail.net",
+                "abcd.100@abc.com.au",
+                "aabc@1.com",
+                "abcdc@gmail.com.com",
+                "abcd+100@gmail.com";
             };
             foreach (string item in sampleEmailList)
             {
@@ -67,8 +51,4 @@ namespace UserRegistration
         }
     }
 }
-<<<<<<< HEAD
-=======
-        
-        
->>>>>>> UC9-ClearAllEmailsSamples
+

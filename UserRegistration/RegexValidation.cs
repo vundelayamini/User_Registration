@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace UserRegistration
 {
     class RegexValidation
-    {
+    { 
         public const string Regex_FirstName = "^[A-Z]{1}[A-Za-z]{2,}$";//Create pattren for firstname
         public const string Regex_LastName = "^[A-Z]{1}[A-Za-z]{2,}$";//Create pattren for lastname
         public const string Regex_Email = "^[0-9A-Za-z]+([._+-][0-9A-Za-z]+)*[@][0-9A-Za-z]+.[a-zA-Z]{2,3}(.[a-zA-Z]{2})?$";////Create pattren for  Email
@@ -35,5 +35,7 @@ namespace UserRegistration
             return Regex.IsMatch(password, Regex_Password);
         }
     }
+
 }
+
 

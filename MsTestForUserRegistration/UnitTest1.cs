@@ -7,6 +7,12 @@ namespace MsTestForUserRegistration
     {
         private object person;
 
+        [TestMethod]
+        public void TestMethod1()
+        {
+              private object person;
+
+
         [TestInitialize]
         public void InitClassObject()
         {

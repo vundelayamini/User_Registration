@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MsTestForUserRegistration", "MsTestForUserRegistration\MsTestForUserRegistration.csproj", "{057CCA49-67FB-4EC4-9222-10EF1863051A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRegistration", "UserRegistration\UserRegistration.csproj", "{0D844F9E-506B-4BCF-B451-AF000858657A}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRegistration", "UserRegistration\UserRegistration.csproj", "{7E2FCAE7-E0E1-49EF-961C-BADE6DF19C97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsTestForUserRegistration", "MsTestForUserRegistration\MsTestForUserRegistration.csproj", "{4883B2A2-713D-4DFB-9CDF-7561397DD0B8}"
+>>>>>>> UC7-Rule3ForPassWord
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +19,7 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{057CCA49-67FB-4EC4-9222-10EF1863051A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{057CCA49-67FB-4EC4-9222-10EF1863051A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{057CCA49-67FB-4EC4-9222-10EF1863051A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -21,11 +28,25 @@ Global
 		{0D844F9E-506B-4BCF-B451-AF000858657A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D844F9E-506B-4BCF-B451-AF000858657A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D844F9E-506B-4BCF-B451-AF000858657A}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{7E2FCAE7-E0E1-49EF-961C-BADE6DF19C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E2FCAE7-E0E1-49EF-961C-BADE6DF19C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E2FCAE7-E0E1-49EF-961C-BADE6DF19C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E2FCAE7-E0E1-49EF-961C-BADE6DF19C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4883B2A2-713D-4DFB-9CDF-7561397DD0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4883B2A2-713D-4DFB-9CDF-7561397DD0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4883B2A2-713D-4DFB-9CDF-7561397DD0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4883B2A2-713D-4DFB-9CDF-7561397DD0B8}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> UC7-Rule3ForPassWord
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+<<<<<<< HEAD
 		SolutionGuid = {0183CEA7-8551-4C5B-A1D9-0C6F79572676}
+=======
+		SolutionGuid = {1C508C06-0C11-4A53-8DF5-27FC994C4101}
+>>>>>>> UC7-Rule3ForPassWord
 	EndGlobalSection
 EndGlobal

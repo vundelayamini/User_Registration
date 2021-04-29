@@ -21,6 +21,9 @@ namespace UserRegistration
             Console.WriteLine("Enter Your Mobile Number::-");//take input from the user
             string MobileNumber = Console.ReadLine();//store the input for mobile number
             Console.WriteLine(regexValidation.ValidateMobile(MobileNumber));
+            Console.WriteLine("Enter Your Password");//take input from the user
+            string Password = Console.ReadLine();//store the input for password
+            Console.WriteLine(regexValidation.ValidatePassword(Password));
         }
     }
 }

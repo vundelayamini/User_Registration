@@ -61,5 +61,18 @@ namespace MsTestForUserRegistration
             //Assert
             Assert.IsTrue(result);
         }
+        /// <summary>
+        /// UC5-predefined password
+        /// </summary>
+        [TestMethod]
+        public void Given_Password_WhenValidate_ShouldReturn_True()
+        {
+            //Arrange
+            string Password = "yaminimahi@12";
+            //Act
+            bool result = person.ValidatePassword(Password);
+            //Assert
+            Assert.IsTrue(result);
+        }
     }
 }

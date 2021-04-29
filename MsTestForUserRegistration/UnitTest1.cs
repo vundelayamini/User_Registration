@@ -80,15 +80,15 @@ namespace MsTestForUserRegistration
             Assert.IsTrue(result);
         }
         [TestMethod]
-        [DataRow("ami@ygmail.com")]
-        [DataRow("ami-100@yahoo.com")]
-        [DataRow("ami.100@abcd.com")]
-        [DataRow("amit111@amit.com")]
-        [DataRow("ami-100@gmail.net")]
-        [DataRow("amit.100@abc.com.au")]
-        [DataRow("aamit@1.com")]
-        [DataRow("amitc@gmail.com.co")]
-        [DataRow("amit+100@gmail.com")]
+        [DataRow("abc@ygmail.com")]
+        [DataRow("abc-100@yahoo.com")]
+        [DataRow("abc.100@abcd.com")]
+        [DataRow("abcd111@amit.com")]
+        [DataRow("abc-100@gmail.net")]
+        [DataRow("abcd.100@abc.com.au")]
+        [DataRow("aacdt@1.com")]
+        [DataRow("abcdc@gmail.com.co")]
+        [DataRow("abcd+100@gmail.com")]
         public void ValidateEmailId_Should_return_true(string email)
         {
             Assert.IsTrue(person.ValidateEmail(email));

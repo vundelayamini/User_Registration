@@ -49,5 +49,17 @@ namespace MsTestForUserRegistration
             //Assert
             Assert.IsTrue(result);
         }
+        /// <summary>
+        /// UC4- valid mobile number
+        /// </summary>
+        [TestMethod]
+        public void Given_MobileNumber_WhenValidate_ShouldReturn_True()
+        {
+            string MobileNumber = "91 9014066209";
+            //Act
+            bool result = person.ValidateMobile(MobileNumber);
+            //Assert
+            Assert.IsTrue(result);
+        }
     }
 }

@@ -1,17 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace UserRegistration
 {
     class Program
-     {
+    {
         static void Main(string[] args)
         {
-            Regex regex = new Regex();
-            Console.WriteLine("Enter Your First Name");
-            string firstName = Console.ReadLine();
-            Console.WriteLine(regex.ValidateFirstName(firstName));
+            Console.WriteLine("Welcome to User registration!");
+
+            RegexValidation regexValidation = new RegexValidation();//Create object
+            Console.WriteLine("Enter Your First Name::-");//take input from the user
+            string FirstName = Console.ReadLine();//Store the input for firstname
+            Console.WriteLine(regexValidation.ValidateFirstName(FirstName));
+            Console.WriteLine("Enter Your Last Name::-");//take input from the user
+            string LastName = Console.ReadLine();//Store the input for lastname
+            Console.WriteLine(regexValidation.ValidateLastName(LastName));
         }
-        
     }
 }
